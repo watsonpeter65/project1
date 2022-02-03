@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<h1> this is the home-view html Home page </h1>
+
+<h1>{{title}} (id : {{id}}) ! </h1> 
+<p> {{content}}  </p>
+
+list 
+<UL> 
+    {% for x in object_list %} 
+        {% if x.title %}
+            <li><a href="/articles/{{ x.id }}/"> {{ x.title }} </a> - {{ x.content }} </li>
+        {% endif %}
+    {% endfor %}
+
+
+</UL>
+
+{% endblock  %}

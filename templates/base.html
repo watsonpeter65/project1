@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        This is the base html 
+    </head>
+    <body>
+
+    <form action='/articles/' method="GET">
+        
+        <input type='text' name='q'/>
+        <input type='submit' />
+
+    </form>
+
+    {% block content %}
+     you forgot to pass the content
+    {% endblock  %}
+    </body>   
+
+</html>
